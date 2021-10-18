@@ -1,0 +1,223 @@
+:root {
+    --verde: #21EB00;
+    --cinza: #a3a3a3;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 10px;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: black;
+}
+
+.container {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    height: 100vh;
+}
+
+.box {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 50rem;
+}
+
+.box h1 {
+    font-size: 5rem;
+    color: var(--verde);
+    margin-bottom: 1rem;
+}
+
+.box label {
+    color: var(--cinza);
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+#Data {
+    width: 28rem;
+    height: 5rem;
+    padding-left: 1rem;
+    color: var(--cinza);
+    font-size: 2rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    border: none;
+    outline: none;
+    border-radius: 2.5rem;
+    margin-bottom: 2rem;
+}
+
+.box a {
+    background-color: var(--verde);
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    font-weight: 700;
+    width: 28rem;
+    height: 5rem;
+    border-radius: 2.5rem;
+    color: black;
+}
+
+.box a:hover {
+    background-color: #23ff01;
+}
+
+.box a:active {
+    background-color: #1ccf00;
+}
+
+
+/* !CSS do Contador */
+
+header {
+    padding: 2rem;
+}
+
+.cabeça {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cabeça span {
+    font-size: 4rem;
+    color: var(--verde);
+    font-weight: 700;
+}
+
+.cabeça a {
+    background-color: var(--verde);
+    color: #000;
+    width: 15rem;
+    height: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    font-size: 2rem;
+    font-weight: 700;
+    border-radius: 1.8rem;
+}
+
+.cabeça a:hover {
+    background-color: #23ff01;
+}
+
+.cabeça a:active {
+    background-color: #1ccf00;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    margin-top: 5rem;
+}
+
+.containerMain {
+    width: 65%;
+}
+
+.containerMain h1 {
+    text-align: center;
+    font-weight: 700;
+    font-size: 9rem;
+    color: #191A18;
+    margin-bottom: 4rem;
+}
+
+.boxMain {
+    display: flex;
+    justify-content: space-between;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.date {
+    color: white;
+    font-size: 10rem;
+}
+
+.dateName {
+    color: var(--verde);
+    font-size: 3.5rem;
+}
+
+@media only screen and (max-width: 810px) {
+    .containerMain {
+        width: 80%;
+    }
+    .date {
+        color: white;
+        font-size: 7rem;
+    }
+    .dateName {
+        color: var(--verde);
+        font-size: 2.5rem;
+    }
+}
+
+@media only screen and (max-width: 650px) {
+    .containerMain {
+        width: 90%;
+    }
+}
+
+@media only screen and (max-width: 560px) {
+    .date {
+        color: white;
+        font-size: 5rem;
+    }
+    .dateName {
+        color: var(--verde);
+        font-size: 2rem;
+    }
+}
+
+@media only screen and (max-width: 420px) {
+    .boxMain {
+        flex-direction: column;
+    }
+    .card {
+        margin-bottom: 2rem;
+    }
+    .date {
+        color: white;
+        font-size: 6rem;
+    }
+    .dateName {
+        color: var(--verde);
+        font-size: 2.5rem;
+    }
+}
+
+@media only screen and (max-width: 370px) {
+    .cabeça span {
+        font-size: 2.5rem;
+    }
+    .cabeça a {
+        width: 14rem;
+        height: 3rem;
+    }
+    .containerMain h1 {
+        font-size: 7rem;
+    }
+}
