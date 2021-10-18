@@ -5,6 +5,8 @@ O projeto é um contador (com dias, horas, minutos e segundos), a partir de uma 
 ## ℹ Sobre o projeto 
 O usuário irá definir no input uma data, e apertar o botão de contar, fazendo assim começar a contagem regressiva até o dia da data. Desenvolvido com HTML, CSS e Javascript.
 
+<h3 align="center"><a href="https://vinicyusabreu.github.io/Contador_de_dias/" target="_blank">🔖 Link do Projeto 🔖</a></h3>
+
 ## 👨‍💻 Rodando Projeto
 
 ```bash
